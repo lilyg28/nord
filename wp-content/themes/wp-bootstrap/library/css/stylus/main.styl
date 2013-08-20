@@ -1,0 +1,248 @@
+@import "variables.styl"
+
+body
+	background bg-color
+	font font-size/line-height font-family
+
+body, html
+	height 100%
+
+#wrap
+	min-height 100%
+
+#main
+	overflow auto
+	padding-bottom footer-height
+
+h1, h2, h3, h4, h5, h6
+	color  mid-purple
+	margin 0
+h1
+	font-size 2em
+h2
+	font-size 1.5em
+h3
+	font-size 1.17em
+h4
+	font-size 1em
+h5
+	font-size 0.93em
+h6
+	font-size 0.75em
+
+.pageHeader
+	h1, h2, h3, h4, h5, h6
+		color  darkest-purple
+		margin 0 0 .5em
+
+.postHeader
+	h1, h2, h3, h4, h5, h6
+		color  darker-purple
+		margin 0 0 .5em
+
+.navbar {margin: 0; }
+.navbar .logo {float: left; }
+.navbar .nav {padding: 0; }
+.navbar .nav > li > a {color: #fff; text-shadow: none; }
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus, .navbar .nav > li > a, .navbar .nav > li > a:hover, .navbar .nav > li > a:focus {background: transparent; color: #fff; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+.navbar .nav > li > a:hover {text-decoration: underline; }
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {color: #fafafa; background-purple: #320961; }
+.navbar .nav li.dropdown > .dropdown-toggle .caret {border-top-purple: #aaa; border-bottom-purple: #aaa; }
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret, .navbar .nav li.dropdown.active > .dropdown-toggle .caret, .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {border-top-purple: #ddd; border-bottom-purple: #ddd; }
+
+.header-top
+	background mid-purple
+	padding 1em 0
+
+.header
+	background darkest-purple
+	font-size .95em
+	font-weight 600
+	// min-height 3em
+	padding 0
+
+.main-feature-container
+	font-weight bold
+	margin 0
+	padding 20px 0
+
+.subscription-form-container
+	border 1px solid #c0c0c0
+	border-width 1px 0
+	font-size .75em
+	vertical-align middle
+	p
+		padding 7px 15px 0 0
+		margin 0
+	form
+		padding 5px 0
+		margin 0
+	form input
+		height 16px
+
+.content-container
+	padding 20px
+
+.footer-main
+	background   darker-grey
+	clear both
+	color        dark-grey
+	font-family "Kreon", sans-serif
+	margin-top -(footer-height)
+	height footer-height
+	position relative
+	ul
+		list-style-type none
+		li
+			margin-bottom 5px
+			&.title
+				color light-grey
+				margin-bottom 1em
+	a
+		color dark-grey
+		&.text-emphasize
+			color lighter-purple
+		&:hover,
+		&:active
+			color light-grey
+			text-decoration none
+
+.footer-top
+	border-bottom 1px solid #151515
+	padding 3em 0 2.5em
+
+.footer-bottom
+	border-top 1px solid #515151
+	padding 2.5em 0 3em
+	text-align center
+	.divider
+		display inline-block
+		padding 0 5px
+		&:before
+			content "|"
+
+.social
+	background-image url(../../img/social_media_sprite.jpg)
+	display inline-block
+	float left
+	min-height 34px
+	min-width 34px
+	text-indent -9999px
+
+	.social-facebook
+		background-position -85px -3px
+
+	.social-twitter
+		background-position -454px -3px
+
+	.social-linkedin
+		background-position -331px -3px
+
+	.social-rss
+		background-position -85px -41px
+
+
+hr
+	background url(../../img/logo-hr.png) no-repeat center bottom
+	border none
+	min-height 50px
+
+for i in 5 10 15 20 25 30 35 40 45 50 100 200
+	.spacer{i}
+		border 0
+		display block
+		font-size 0
+		height i * 1px
+		margin 0
+		padding 0
+		width 100%
+
+.story p
+	font-size 140%
+	line-height 1.6
+	margin-bottom 2em
+
+
+.address-direction
+	border-left 1px solid #ccc
+	padding-left 30px
+
+
+.text-small p
+	font-size 90%
+
+.breadcrumb
+	background #fafafa
+	font-size .8em
+	padding 0 0 0 1.5em
+	margin -1em 0 1em 0
+	a
+		color darkest-purple
+	.active a
+		color lightest-purple
+
+
+// .border
+// 	border 1px solid #ccc
+// 	border-width 0
+// 	min-height 100%
+
+// .right-border
+// 	@extends .border
+// 	border-right-width 1px
+// 	padding-right 2em
+
+// .left-border
+// 	@extends .border
+// 	border-left-width 1px
+// 	padding-left 2em
+
+
+.accordion-inner
+	border-top 1px solid #E5E5E5
+	padding 9px 15px
+
+
+.sidebar
+	font-size 0.9em
+	.topic
+		border-bottom 1px solid #ccc
+		padding-bottom .5em
+		margin: 0 0 .5em 0
+		.no-icon
+			margin-left: .97em
+		.link
+			color mid-purple
+			cursor pointer
+			&:hover
+				text-decoration: underline
+		ul
+			list-style-type none
+			margin 0 0 0 2em
+			a
+				color color
+		i.icon-caret-right
+			padding-right .2em
+
+
+.rss-box
+	.rss-title
+		display none
+	.rss-items
+		list-style-type none
+		margin: 0
+		li
+			margin-bottom 2em
+			line-height 1.5
+		a
+			display block
+			font-size 1.5em
+		span.rss-date
+			display block
+			font-size .8em
+		br
+			display none
+
+
+.affix
+	top 30px
