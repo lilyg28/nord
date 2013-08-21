@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: About Us
+* Template Name: Get Involved
 */
 ?>
 <?php get_header() ?>
@@ -11,7 +11,7 @@
 		<!-- navigation -->
 		<div class="span3">
 
-			<?php include('sidebar-about-us.php') ?>
+			<?php include('sidebar-get-involved.php') ?>
 
 		</div><!-- end span -->
 

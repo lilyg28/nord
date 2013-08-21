@@ -3,21 +3,16 @@
 
 	<div class="content-container container-fluid">
 
-		<ul class="breadcrumb">
-			<li><a href="<?php echo get_site_url() ?>">Home</a> <span class="divider">/</span></li>
-			<li class="active"><a href="<?php echo get_site_url() ?>/get-involved">Get Involved</a></li>
-		</ul>
-
 		<div class="row-fluid">
 
 			<!-- navigation -->
 			<div class="span3">
 
-				<?php include('sidebar-library.php') ?>
+				<?php include('sidebar-renal-disease-library.php') ?>
 
 			</div><!-- end span -->
 
-			<div class="span8">
+			<div class="span9">
 
 				<header class="pageHeader">
 					<h1>Recent News on Kidney</h1>

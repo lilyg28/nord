@@ -775,5 +775,4 @@ function get_wpbs_theme_options(){
         }
       }
 } // end get_wpbs_theme_options function
-
 ?>

@@ -76,7 +76,7 @@
 					<h2>Screening &amp; Diagnostic Center</h2>
 				</header>
 
-				<img src="http://placehold.it/500x500" alt="">
+				<img src="http://placehold.it/450x300" alt="">
 
 				<p>
 					You can get screened for renal disease for FREE! Do not hesitate to contact
@@ -93,7 +93,7 @@
 					<h2>Education Center with Library</h2>
 				</header>
 
-				<img src="http://placehold.it/500x500" alt="">
+				<img src="http://placehold.it/450x300" alt="">
 
 				<p>
 					Get to know more about Renal Disease on our Library page. We also have
@@ -116,7 +116,7 @@
 					<h3>Volunteer</h3>
 				</header>
 
-				<img src="http://placehold.it/300x300" alt="">
+				<img src="http://placehold.it/250x200" alt="">
 
 				<p>
 					Get involved with NORD by volunteering for a great opportunity.
@@ -132,7 +132,7 @@
 					<h3>Media</h3>
 				</header>
 
-				<img src="http://placehold.it/300x300" alt="">
+				<img src="http://placehold.it/250x200" alt="">
 
 				<p>
 					We have great media. Come visit our media page.
@@ -148,7 +148,7 @@
 					<h3>Donate</h3>
 				</header>
 
-				<img src="http://placehold.it/300x300" alt="">
+				<img src="http://placehold.it/250x200" alt="">
 
 				<p>
 					Many people are suffering from Renal Disease because of lack of funding.
@@ -162,24 +162,35 @@
 		</div>
 
 		<hr>
-The National Organization for Renal Disease is a nonprofit organization that offers programs providing prevention, education, awareness and research on renal (kidney) disease. It works primarily with underserved and underinsured adults who have a high risk of developing renal disease. It offers free health screenings for kidney function, high blood pressure and blood glucose levels.
+
+		<header class="pageHeader">
+			<h3>Our Partners</h3>
+		</header>
 		<div class="row-fluid">
 
-			<header class="pageHeader">
-				<h3>Partners and Sponsors</h3>
-			</header>
-
+			<div class="span10 offset1">
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/library/img/partner_logos.png">
+			</div>
+<!--
 			<div class="span3">
-
-		<p style="margin-top: 0; margin-bottom: 0">
-																<a href="http://www.fmcna.com/" target="_blank" style="text-decoration: none">
-																<font color="#003163">Fresenius, Inc.</font></a></p>
-
-<p><a href="http://www.fmcna.com/" target="_blank" border="0">
-<img src="http://stop-esrd.org/donations/fresenius.jpg" border="0" ></a></p>
-
-							<a class="regularText" href="http://www.bms.com/pages/default.aspx" target="_blank">
+				<?php $img_dir = get_stylesheet_directory_uri() ?>
+				<ul class="partners-list no-list-style">
+					<li>
+						<a href="http://www.fmcna.com" target="_blank"><img src="<?php echo $img_dir ?>/library/img/partners/fresenius-medical-care.jpg" ></a>
+					</li>
+					<li>
+						<a href="http://www.bms.com" target="_blank"><img src="<?php echo $img_dir ?>/library/img/partners/bristol-myers-squibb.jpg" ></a>
+					</li>
+					<li>
+						<a href="http://www.fmcna.com" target="_blank"><img src="<?php echo $img_dir ?>/library/img/partners/fresenius-medical-care.jpg" ></a>
+					</li>
+					<li>
+						<a href="http://www.fmcna.com" target="_blank"><img src="<?php echo $img_dir ?>/library/img/partners/fresenius-medical-care.jpg" ></a>
+					</li>
+				</ul>
+							<a class="regularText" href="/pages/default.aspx" target="_blank">
 									Bristol-Myers Squibb</a><br>
+
 
 <a class="regularText" href="http://www.sanofi.us/l/us/en/index.jsp" target="_blank">
 									Sanofi</a><br>
@@ -300,9 +311,8 @@ The National Organization for Renal Disease is a nonprofit organization that off
 																<p style="margin-top: 0; margin-bottom: 0">
 																<a href="http://www.cvs.com">
 																<img border="0" src="images/FATWYCwithsm.jpg" width="183" height="38"></a></p>
-																</td>
 			</div>
-
+ -->
 		</div>
 
 	</section>

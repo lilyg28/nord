@@ -17,6 +17,7 @@ body, html
 h1, h2, h3, h4, h5, h6
 	color  mid-purple
 	margin 0
+
 h1
 	font-size 2em
 h2
@@ -31,12 +32,12 @@ h6
 	font-size 0.75em
 
 .pageHeader
-	h1, h2, h3, h4, h5, h6
+	h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 		color  darkest-purple
 		margin 0 0 .5em
 
 .postHeader
-	h1, h2, h3, h4, h5, h6
+	h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 		color  darker-purple
 		margin 0 0 .5em
 
@@ -206,8 +207,7 @@ for i in 5 10 15 20 25 30 35 40 45 50 100 200
 .sidebar
 	font-size 0.9em
 	.topic
-		border-bottom 1px solid #ccc
-		padding-bottom .5em
+		padding 0 0 .5em 0
 		margin: 0 0 .5em 0
 		.no-icon
 			margin-left: .97em
@@ -218,11 +218,13 @@ for i in 5 10 15 20 25 30 35 40 45 50 100 200
 				text-decoration: underline
 		ul
 			list-style-type none
-			margin 0 0 0 2em
+			margin 0 0 0 1em
 			a
 				color color
 		i.icon-caret-right
-			padding-right .2em
+			padding-right .3em
+		i.icon-caret-down
+			padding-right .1em
 
 
 .rss-box
@@ -246,3 +248,15 @@ for i in 5 10 15 20 25 30 35 40 45 50 100 200
 
 .affix
 	top 30px
+
+.no-list-style
+	list-style-type none
+	margin-left 0
+
+.partners-list
+	li
+		height 4em
+		img
+			height auto
+			vertical-align middle
+			width 100%

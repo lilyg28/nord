@@ -6,33 +6,32 @@
 			<div class="row-fluid">
 				<div class="span3">
 					<ul>
-						<li class="title">get to know us</li>
-						<li><a href="#"><i class="icon-facebook-sign icon-white"></i> facebook</a></li>
-						<li><a href="#"><i class="icon-twitter icon-white"></i> twitter</a></li>
+						<li class="title">get involved</li>
+						<li><a href="<?php echo home_url('get-involved/donate') ?>" class="text-emphasize">donate</a></li>
+						<li><a href="<?php echo home_url('get-involved/volunteer') ?>">volunteer</a></li>
 					</ul>
 				</div>
 				<div class="span3">
 					<ul>
-						<li class="title">connect</li>
-						<li><a href="<?php echo get_site_url() 	?>/contact-us">contact info</a></li>
-						<li>+1.818.445.9792</li>
-						<li>nord4kidneydisease@yahoo.com</li>
+						<li class="title">get to know us</li>
+						<li><a href="https://www.facebook.com/NORDorg" target="_blank"><i class="icon-facebook-sign icon-white"></i> facebook</a></li>
+						<li><a href="#" target="_blank"><i class="icon-twitter icon-white"></i> twitter</a></li>
 					</ul>
 				</div>
 				<div class="span3">
 					<ul>
 						<li class="title">about us</li>
-						<li><a href="<?php echo get_site_url() ?>/who-we-are">who we are</a></li>
-						<li><a href="<?php echo get_site_url() ?>/what-we-do">what we do</a></li>
-						<li><a href="<?php echo get_site_url() ?>/media">media</a></li>
+						<li><a href="<?php echo home_url('about-us/mission') ?>">our mission</a></li>
+						<li><a href="<?php echo home_url('about-us/program') ?>">our program</a></li>
+						<li><a href="<?php echo home_url('about-us/media') ?>">on media</a></li>
 					</ul>
 				</div>
 				<div class="span3">
 					<ul>
-						<li class="title">get involved</li>
-						<li><a href="<?php echo get_site_url() ?>/donate" class="text-emphasize">donate</a></li>
-						<li><a href="<?php echo get_site_url() ?>/volunteer">volunteer</a></li>
-						<li><a href="<?php echo get_site_url() ?>/links">links</a></li>
+						<li class="title">connect</li>
+						<li><a href="<?php echo home_url('about-us/contact-us') ?>">contact info</a></li>
+						<li>+1.818.769-6245</li>
+						<li>nord4kidneydisease@yahoo.com</li>
 					</ul>
 				</div>
 			</div>
@@ -40,13 +39,13 @@
 
 		<div class="footer-bottom">
 			<div class="row-fluid">
-				<a href="<?php echo get_site_url() ?>/sponsors">Sponsors</a>
+				<a href="<?php echo home_url('about-us/partners') ?>">Partners</a>
 				<span class="divider"></span>
 				<a href="#">Disclaimer</a>
 				<span class="divider"></span>
 				<a href="#">Service mark</a>
 				<span class="divider"></span>
-				<a href="#">&copy; <?php echo date('Y') ?> <?php bloginfo('name'); ?></a>
+				<a href="#">&copy; <?php echo date('Y') ?> <?php bloginfo('name') ?></a>
 			</div>
 		</div>
 	</div>
@@ -79,10 +78,10 @@ $('.topic').on('click', 'h4', function(){
 	var topic = $(this).closest('.topic');
 
 	// toggle topic sub-list
-	topic.find('ul').toggle('fast');
+	topic.find('ul').slideToggle('fast');
 
 	// toggle caret icon
-	var icon = topic.find('i');
+	var icon = topic.find('i.icon-caret');
 	if (icon.hasClass('icon-caret-right'))
 	{
 		icon.removeClass('icon-caret-right').addClass('icon-caret-down');
