@@ -4,7 +4,23 @@
 
 	<div class="main-feature-container">
 		<div class="container-fluid">
-			<div class="row-fluid">
+			<div id="myCarousel" class="carousel slide">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+					<!-- Carousel items -->
+				<div class="carousel-inner">
+					<div class="active item"><img src="http://lorempixel.com/g/1200/600/people/9" alt="image0"></div>
+					<div class="item"><img src="http://lorempixel.com/g/1200/600/people/6" alt="image1"></div>
+					<div class="item"><img src="http://lorempixel.com/g/1200/600/people/5" alt="image2"></div>
+				</div>
+				<!-- Carousel nav -->
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+			</div>
+			<!-- <div class="row-fluid">
 				<div class="span6">
 					<img src="http://placehold.it/500x400" alt="">
 				</div>
@@ -20,7 +36,7 @@
 					</p>
 					<button class="btn btn-large btn-success"><b>Donate. Save People.</b></button>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 
